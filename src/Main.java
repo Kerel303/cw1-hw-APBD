@@ -33,6 +33,13 @@ public class Main {
         System.out.println("Wszystkie znaki: " + size*size);
         System.out.println("Otrzymane znaki specjalne: " + counter);
 
+    }
 
+    static double calculateAverage(int[] values){
+        int sum = 0;
+        for(int i = 0; i < values.length; i++){
+            sum += values[i];
+        }
+        return (double) sum /values.length;
     }
 }

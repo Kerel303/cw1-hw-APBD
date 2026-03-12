@@ -16,16 +16,23 @@ public class Main {
         }
         chance = chance/100;
 
+        int counter = 0;
+
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
                 if(Math.random() > chance){
                     System.out.print(" * ");
                 }else {
                     System.out.print(" # ");
+                    counter++;
                 }
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println("Wszystkie znaki: " + size*size);
+        System.out.println("Otrzymane znaki specjalne: " + counter);
+
 
     }
 }

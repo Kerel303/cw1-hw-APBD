@@ -42,4 +42,14 @@ public class Main {
         }
         return (double) sum /values.length;
     }
+
+    static int calculateMax(int[] values){
+        int max = values[0];
+        for (int i = 0; i < values.length; i++) {
+            if (values[i] > max) {
+                max = values[i];
+            }
+        }
+        return max;
+    }
 }

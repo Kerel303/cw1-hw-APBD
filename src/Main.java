@@ -12,7 +12,7 @@ public class Main {
         }
         createCube(size, chance);
 
-        int[] values = {1, 2, 4, 5, 6, 3, 2};
+        int[] values = {1, 2, 4, 5, 6, 3, 2, 7};
         System.out.println("Średnia: " + CalculateAverage(values));
         System.out.println("Największa: " + CalculateMax(values));
 

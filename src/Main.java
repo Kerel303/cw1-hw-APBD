@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
 
-        
+        createCube(size);
 
 
 
@@ -15,4 +15,16 @@ public class Main {
 
         scanner.close();
     }
+
+
+
+    static void createCube(int size){
+        for(int i = 0; i < size; i++){
+            for(int j = 0; j < size; j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
 }

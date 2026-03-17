@@ -7,7 +7,9 @@ public class Main {
         int size = scanner.nextInt();
         System.out.println("Podaj szansę wystąpienia innego znaku (w %): ");
         double chance = scanner.nextDouble() / 100;
-
+        if (chance > 1) {
+            chance = 1;
+        }
         createCube(size, chance);
 
         int[] values = {1, 2, 4, 5, 6, 3, 2};

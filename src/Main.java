@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Wersja main");
+        System.out.println("Połączona wersja");
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj rozmiar kwadratu: ");

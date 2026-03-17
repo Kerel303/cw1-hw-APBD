@@ -12,6 +12,7 @@ public class Main {
 
         int[] values = {1, 2, 4, 5, 6, 3, 2};
         System.out.println("Średnia: " + CalculateAverage(values));
+        System.out.println("Największa: " + CalculateMax(values));
 
         scanner.close();
     }
@@ -48,6 +49,16 @@ public class Main {
             sum += i;
         }
         return (sum/values.length);
+    }
+
+    static int CalculateMax(int[] values){
+        int max = values[0];
+        for (int i : values) {
+            if(max < i){
+                max = i;
+            }
+        }
+        return max;
     }
 
 }

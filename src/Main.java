@@ -64,7 +64,13 @@ public class Main {
     }
 
     static int CalculateMin(int[] values){
-        return values[0];
+        int min = values[0];
+        for (int i : values) {
+            if(min > i){
+                min = i;
+            }
+        }
+        return min;
     }
 
 }

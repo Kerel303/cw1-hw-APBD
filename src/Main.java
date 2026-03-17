@@ -63,4 +63,8 @@ public class Main {
         return max;
     }
 
+    static int CalculateMin(int[] values){
+        return values[0];
+    }
+
 }

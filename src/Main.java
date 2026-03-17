@@ -2,16 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Początek");
-
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj rozmiar kwadratu: ");
         int size = scanner.nextInt();
+        System.out.println("Podaj szansę wystąpienia innego znaku (w %): ");
+        double chance = scanner.nextDouble() / 100;
 
-        createCube(size);
-
-
-
-
+        createCube(size, chance);
 
         scanner.close();
     }
@@ -22,6 +19,20 @@ public class Main {
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
                 System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void createCube(int size, double chance){
+        for(int i = 0; i < size; i++){
+            for(int j = 0; j < size; j++){
+                if(Math.random() >= chance){
+                    System.out.print(" * ");
+                }else{
+                    System.out.print(" # ");
+                }
+                
             }
             System.out.println();
         }

@@ -10,6 +10,9 @@ public class Main {
 
         createCube(size, chance);
 
+        int[] values = {1, 2, 4, 5, 6, 3, 2};
+        System.out.println("Średnia: " + CalculateAverage(values));
+
         scanner.close();
     }
 
@@ -36,6 +39,15 @@ public class Main {
             }
             System.out.println();
         }
+    }
+
+
+    static double CalculateAverage(int[] values){
+        double sum = 0;
+        for (int i : values) {
+            sum += i;
+        }
+        return (sum/values.length);
     }
 
 }
